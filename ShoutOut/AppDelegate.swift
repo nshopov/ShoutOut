@@ -16,13 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         coreDataStack.createMainContext {[unowned self] container in
             let mainContext = container.viewContext
+
+            let dataService = DataService(managedObjectContext: mainContext)
+            dataService.seedEmployees()
             
+            let storyBoard = self.window?.rootViewController?.storyboard
+            guard let rootVC = storyBoard?.instantiateViewController(withIdentifier: "RootViewController") else {
+                fatalError("Could not instantiate root view controller!")
+            }
+
+            self.window?.rootViewController = rootVC
+
             let firstViewController = self.getFirstViewController()
             firstViewController.managedObjectContext = mainContext
             
-            let dataService = DataService(managedObjectContext: mainContext)
-            
-            dataService.seedEmployees()
+
             
         }
 		return true

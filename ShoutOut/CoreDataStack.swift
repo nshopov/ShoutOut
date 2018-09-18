@@ -12,6 +12,10 @@ import CoreData
 struct CoreDataStack {
     func createMainContext(completion: @escaping (NSPersistentContainer)->Void) {
         let container = NSPersistentContainer(name: "ShoutOut")
+        let storeURL = URL.documentsURL.appendingPathComponent("ShoutOut.sqlite")
+        let storeDescription = NSPersistentStoreDescription(url: storeURL)
+        container.persistentStoreDescriptions = [storeDescription]
+
         container.loadPersistentStores {
             persistentStoreDescription, error in
             guard error == nil else {
