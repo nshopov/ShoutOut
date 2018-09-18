@@ -35,23 +35,32 @@ class ShoutOutDraftsViewController: UIViewController,
     func configureFetchResultsController() {
         let shoutOutFetchRequest = NSFetchRequest<ShoutOut>(entityName: ShoutOut.entityName)
         let lastNameSortDescriptor = NSSortDescriptor(key: #keyPath(ShoutOut.toEmployee.lastName), ascending: true)
+        let departmentSortDescriptor = NSSortDescriptor(key: #keyPath(ShoutOut.toEmployee.department), ascending: true)
         let firstNameSortDescriptor = NSSortDescriptor(key: #keyPath(ShoutOut.toEmployee.firstName), ascending: true)
-        shoutOutFetchRequest.sortDescriptors = [lastNameSortDescriptor, firstNameSortDescriptor]
+        shoutOutFetchRequest.sortDescriptors = [departmentSortDescriptor, lastNameSortDescriptor, firstNameSortDescriptor]
 
         self.fetchedResultsController = NSFetchedResultsController<ShoutOut>(fetchRequest: shoutOutFetchRequest,
                                                                              managedObjectContext: self.managedObjectContext,
-                                                                             sectionNameKeyPath: nil,
+                                                                             sectionNameKeyPath: #keyPath(ShoutOut.toEmployee.department),
                                                                              cacheName: nil)
         self.fetchedResultsController.delegate = self
     }
 
 	// MARK: TableView Data Source methods
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
+        var result = 0
+        if let sections = self.fetchedResultsController.sections {
+            result = sections.count
+        }
+        return result
 	}
 	
 	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return nil
+        var titleHeader: String? = nil
+		if let sections = self.fetchedResultsController.sections {
+            titleHeader = sections[section].name
+        }
+        return titleHeader
 	}
 	
 	
@@ -67,6 +76,8 @@ class ShoutOutDraftsViewController: UIViewController,
 		let cell = tableView.dequeueReusableCell(withIdentifier: "subtitleCell", for: indexPath)
 
         let shoutOut = self.fetchedResultsController.object(at: indexPath)
+        
+        print(shoutOut.toEmployee.department)
 
 		cell.textLabel?.text = "\(shoutOut.toEmployee.firstName) \(shoutOut.toEmployee.lastName)"
 		cell.detailTextLabel?.text = shoutOut.shoutCategory
@@ -142,6 +153,24 @@ class ShoutOutDraftsViewController: UIViewController,
 
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.endUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, sectionIndexTitleForSectionName sectionName: String) -> String? {
+        return sectionName
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+        
+        let sectionIndexSet = NSIndexSet(index: sectionIndex) as IndexSet
+
+        switch type {
+        case .insert:
+            self.tableView.insertSections(sectionIndexSet, with: .fade)
+        case .delete:
+            self.tableView.deleteSections(sectionIndexSet, with: .fade)
+        default:
+            break
+        }
     }
 
 }

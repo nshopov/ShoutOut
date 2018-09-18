@@ -6,7 +6,7 @@
         <attribute name="lastName" attributeType="String" syncable="YES"/>
         <relationship name="shoutOuts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ShoutOut" inverseName="toEmployee" inverseEntity="ShoutOut" syncable="YES"/>
     </entity>
-    <entity name="ShoutOut" representedClassName=".ShoutOut" elementID="sendDate" syncable="YES">
+    <entity name="ShoutOut" representedClassName=".ShoutOut" elementID="sentDate" syncable="YES">
         <attribute name="from" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sentOn" optional="YES" attributeType="Date" usesScalarValueType="NO" elementID="sendDate" syncable="YES"/>

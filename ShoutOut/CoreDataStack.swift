@@ -10,28 +10,18 @@ import Foundation
 import CoreData
 
 struct CoreDataStack {
-    func createMainContext() -> NSManagedObjectContext {
-        let modelURL = Bundle.main.url(forResource: "ShoutOut", withExtension: "momd")
-        guard let model = NSManagedObjectModel(contentsOf: modelURL!) else {
-            fatalError("model not right!")
+    func createMainContext(completion: @escaping (NSPersistentContainer)->Void) {
+        let container = NSPersistentContainer(name: "ShoutOut")
+        container.loadPersistentStores {
+            persistentStoreDescription, error in
+            guard error == nil else {
+                fatalError("Failed to load store \(String(describing: error))")
+            }
+            
+            DispatchQueue.main.async {
+                completion(container)
+            }
         }
-
-        let persistanceCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
-        let storeURL = URL.documentsURL.appendingPathComponent("ShoutOut.sqlite")
-
-        let migrationOptions = [
-            NSMigratePersistentStoresAutomaticallyOption: true,
-            NSInferMappingModelAutomaticallyOption: true
-        ]
-
-        try! persistanceCoordinator.addPersistentStore(ofType: NSSQLiteStoreType,
-                                                       configurationName: nil,
-                                                       at: storeURL,
-                                                       options: migrationOptions)
-
-        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-        context.persistentStoreCoordinator = persistanceCoordinator
-        return context
     }
 
     func creatInMemboryContext() -> NSManagedObjectContext {

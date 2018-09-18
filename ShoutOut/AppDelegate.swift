@@ -13,15 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
         let coreDataStack = CoreDataStack()
-        let mainContext = coreDataStack.createMainContext()
-
-        let firstViewController = self.getFirstViewController()
-        firstViewController.managedObjectContext = mainContext
-
-        let dataService = DataService(managedObjectContext: mainContext)
-
-        dataService.seedEmployees()
-
+        
+        coreDataStack.createMainContext {[unowned self] container in
+            let mainContext = container.viewContext
+            
+            let firstViewController = self.getFirstViewController()
+            firstViewController.managedObjectContext = mainContext
+            
+            let dataService = DataService(managedObjectContext: mainContext)
+            
+            dataService.seedEmployees()
+            
+        }
 		return true
 	}
 
