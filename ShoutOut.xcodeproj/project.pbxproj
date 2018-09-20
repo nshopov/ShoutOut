@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D7E3001DE43974594C61892 /* Pods_ShoutOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F3A625528B091337089DE5 /* Pods_ShoutOut.framework */; };
+		A467F5F92153C68100E3C633 /* MVVMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5F82153C68100E3C633 /* MVVMRouter.swift */; };
+		A467F5FA2153C68100E3C633 /* MVVMRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5F82153C68100E3C633 /* MVVMRouter.swift */; };
+		A467F5FC2153C69400E3C633 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5FB2153C69400E3C633 /* MVVMViewController.swift */; };
+		A467F5FD2153C69400E3C633 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5FB2153C69400E3C633 /* MVVMViewController.swift */; };
+		A467F5FF2153C6A300E3C633 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */; };
+		A467F6002153C6A300E3C633 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */; };
+		A467F6032153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */; };
+		A467F6042153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */; };
+		A467F6062153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */; };
+		A467F6072153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */; };
+		A467F6092153D6D500E3C633 /* ShoutOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */; };
+		A467F60A2153D6D500E3C633 /* ShoutOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */; };
 		A4F5D7E62148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E42148008F004CE314 /* ShoutOut.xcdatamodeld */; };
 		A4F5D7E72148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E42148008F004CE314 /* ShoutOut.xcdatamodeld */; };
 		A4F5D7E9214800CF004CE314 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E8214800CF004CE314 /* CoreDataStack.swift */; };
@@ -31,6 +44,7 @@
 		F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B891D9861E40029B14E /* ShoutOutDetailsViewController.swift */; };
 		F2530B8D1D9861E40029B14E /* ShoutOutDraftsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B8A1D9861E40029B14E /* ShoutOutDraftsViewController.swift */; };
 		F2530B8E1D9861E40029B14E /* ShoutOutEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2530B8B1D9861E40029B14E /* ShoutOutEditorViewController.swift */; };
+		FF82CC9F732616A8DDF4B748 /* Pods_ShoutOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299758F4254BBB7A87DC34FC /* Pods_ShoutOutTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F3A625528B091337089DE5 /* Pods_ShoutOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoutOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		299758F4254BBB7A87DC34FC /* Pods_ShoutOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoutOutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BAA4382EA2DEC9ED091BB4 /* Pods-ShoutOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoutOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoutOut/Pods-ShoutOut.debug.xcconfig"; sourceTree = "<group>"; };
+		A467F5F82153C68100E3C633 /* MVVMRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRouter.swift; sourceTree = "<group>"; };
+		A467F5FB2153C69400E3C633 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutDraftsRxViewController.swift; sourceTree = "<group>"; };
+		A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutViewModel.swift; sourceTree = "<group>"; };
+		A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutRouter.swift; sourceTree = "<group>"; };
 		A4F5D7E52148008F004CE314 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
 		A4F5D7E8214800CF004CE314 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A4F5D7EB21495730004CE314 /* ShoutOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOut.swift; sourceTree = "<group>"; };
@@ -52,6 +75,9 @@
 		A4F5D7F5214A9483004CE314 /* SaveDataAndDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataAndDelete.swift; sourceTree = "<group>"; };
 		A4F5D7FA214A9D42004CE314 /* NamedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedEntity.swift; sourceTree = "<group>"; };
 		A4F5D800214C008E004CE314 /* ShoutOut2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut2.xcdatamodel; sourceTree = "<group>"; };
+		CB88A189383604F4F16B783D /* Pods-ShoutOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoutOutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoutOutTests/Pods-ShoutOutTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6D0F1A8EC3614E337EE7D07 /* Pods-ShoutOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoutOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoutOut/Pods-ShoutOut.release.xcconfig"; sourceTree = "<group>"; };
+		EC39E7A1AC786AEFA2105F0C /* Pods-ShoutOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoutOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoutOutTests/Pods-ShoutOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2530B631D985E400029B14E /* ShoutOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoutOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2530B661D985E400029B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2530B6B1D985E400029B14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7E3001DE43974594C61892 /* Pods_ShoutOut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +105,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF82CC9F732616A8DDF4B748 /* Pods_ShoutOutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C10C053FABA178D4B4CB47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80BAA4382EA2DEC9ED091BB4 /* Pods-ShoutOut.debug.xcconfig */,
+				D6D0F1A8EC3614E337EE7D07 /* Pods-ShoutOut.release.xcconfig */,
+				EC39E7A1AC786AEFA2105F0C /* Pods-ShoutOutTests.debug.xcconfig */,
+				CB88A189383604F4F16B783D /* Pods-ShoutOutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A467F5F72153C53500E3C633 /* CoreProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				A467F5F82153C68100E3C633 /* MVVMRouter.swift */,
+				A467F5FB2153C69400E3C633 /* MVVMViewController.swift */,
+				A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */,
+			);
+			name = CoreProtocols;
+			sourceTree = "<group>";
+		};
+		A467F6012153CA3400E3C633 /* ShoutOutDrafts */ = {
+			isa = PBXGroup;
+			children = (
+				A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */,
+				A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */,
+				A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */,
+			);
+			name = ShoutOutDrafts;
+			sourceTree = "<group>";
+		};
 		A4F5D7F1214A91DB004CE314 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +151,23 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		E88DD8768F652844CCADBF8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22F3A625528B091337089DE5 /* Pods_ShoutOut.framework */,
+				299758F4254BBB7A87DC34FC /* Pods_ShoutOutTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2530B5A1D985E400029B14E = {
 			isa = PBXGroup;
 			children = (
 				F2530B651D985E400029B14E /* ShoutOut */,
 				F2530B7A1D985E410029B14E /* ShoutOutTests */,
 				F2530B641D985E400029B14E /* Products */,
+				96C10C053FABA178D4B4CB47 /* Pods */,
+				E88DD8768F652844CCADBF8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +183,8 @@
 		F2530B651D985E400029B14E /* ShoutOut */ = {
 			isa = PBXGroup;
 			children = (
+				A467F6012153CA3400E3C633 /* ShoutOutDrafts */,
+				A467F5F72153C53500E3C633 /* CoreProtocols */,
 				A4F5D7F1214A91DB004CE314 /* Services */,
 				F2530B871D985E7F0029B14E /* Model */,
 				F2530B881D985E890029B14E /* Views & Assets */,
@@ -172,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2530B801D985E410029B14E /* Build configuration list for PBXNativeTarget "ShoutOut" */;
 			buildPhases = (
+				31CE59515615D66C77F4A96C /* [CP] Check Pods Manifest.lock */,
 				F2530B5F1D985E400029B14E /* Sources */,
 				F2530B601D985E400029B14E /* Frameworks */,
 				F2530B611D985E400029B14E /* Resources */,
+				E7E3BCC3872CB4A72EF617BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2530B831D985E410029B14E /* Build configuration list for PBXNativeTarget "ShoutOutTests" */;
 			buildPhases = (
+				1D1FF8C2874C6FC16E9623F1 /* [CP] Check Pods Manifest.lock */,
 				F2530B731D985E410029B14E /* Sources */,
 				F2530B741D985E410029B14E /* Frameworks */,
 				F2530B751D985E410029B14E /* Resources */,
@@ -215,7 +290,7 @@
 				TargetAttributes = {
 					F2530B621D985E400029B14E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3534V3UJNS;
+						DevelopmentTeam = 6K2SQWVXUB;
 						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
@@ -267,12 +342,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D1FF8C2874C6FC16E9623F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShoutOutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31CE59515615D66C77F4A96C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShoutOut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E3BCC3872CB4A72EF617BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShoutOut/Pods-ShoutOut-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShoutOut/Pods-ShoutOut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2530B5F1D985E400029B14E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A4F5D7F3214A91EE004CE314 /* DataService.swift in Sources */,
+				A467F5FF2153C6A300E3C633 /* MVVMViewModel.swift in Sources */,
+				A467F6062153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */,
 				A4F5D7E62148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */,
 				A4F5D7EF214A5C1E004CE314 /* Employee.swift in Sources */,
 				F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */,
@@ -280,8 +422,12 @@
 				A4F5D7EC21495730004CE314 /* ShoutOut.swift in Sources */,
 				A4F5D7FB214A9D42004CE314 /* NamedEntity.swift in Sources */,
 				A4F5D7E9214800CF004CE314 /* CoreDataStack.swift in Sources */,
+				A467F5FC2153C69400E3C633 /* MVVMViewController.swift in Sources */,
+				A467F6092153D6D500E3C633 /* ShoutOutRouter.swift in Sources */,
 				F2530B8E1D9861E40029B14E /* ShoutOutEditorViewController.swift in Sources */,
+				A467F6032153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */,
 				F2530B8D1D9861E40029B14E /* ShoutOutDraftsViewController.swift in Sources */,
+				A467F5F92153C68100E3C633 /* MVVMRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +440,17 @@
 				A4F5D7F8214A9907004CE314 /* Employee.swift in Sources */,
 				A4F5D7E72148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */,
 				A4F5D7F9214A990B004CE314 /* ShoutOut.swift in Sources */,
+				A467F60A2153D6D500E3C633 /* ShoutOutRouter.swift in Sources */,
 				A4F5D7F4214A91EE004CE314 /* DataService.swift in Sources */,
+				A467F6002153C6A300E3C633 /* MVVMViewModel.swift in Sources */,
 				A4F5D7FE214AB879004CE314 /* ShoutOutDetailsViewController.swift in Sources */,
 				A4F5D7FF214AB87C004CE314 /* ShoutOutDraftsViewController.swift in Sources */,
+				A467F6072153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */,
+				A467F6042153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */,
+				A467F5FD2153C69400E3C633 /* MVVMViewController.swift in Sources */,
 				F2530B7C1D985E410029B14E /* ShoutOutTests.swift in Sources */,
 				A4F5D7FC214A9D42004CE314 /* NamedEntity.swift in Sources */,
+				A467F5FA2153C68100E3C633 /* MVVMRouter.swift in Sources */,
 				A4F5D7F6214A9483004CE314 /* SaveDataAndDelete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -435,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -446,9 +598,10 @@
 		};
 		F2530B811D985E410029B14E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BAA4382EA2DEC9ED091BB4 /* Pods-ShoutOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3534V3UJNS;
+				DEVELOPMENT_TEAM = 6K2SQWVXUB;
 				INFOPLIST_FILE = ShoutOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.ShoutOut;
@@ -460,9 +613,10 @@
 		};
 		F2530B821D985E410029B14E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D0F1A8EC3614E337EE7D07 /* Pods-ShoutOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3534V3UJNS;
+				DEVELOPMENT_TEAM = 6K2SQWVXUB;
 				INFOPLIST_FILE = ShoutOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.ShoutOut;
@@ -474,6 +628,7 @@
 		};
 		F2530B841D985E410029B14E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC39E7A1AC786AEFA2105F0C /* Pods-ShoutOutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +645,7 @@
 		};
 		F2530B851D985E410029B14E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB88A189383604F4F16B783D /* Pods-ShoutOutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

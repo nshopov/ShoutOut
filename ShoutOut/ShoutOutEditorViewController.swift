@@ -93,7 +93,7 @@ UIPickerViewDelegate {
 
             let okAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) -> Void in
                 self.managedObjectContext.rollback()
-                self.shoutOut = NSEntityDescription.insertNewObject(forEntityName: ShoutOut.entityName, into: self.managedObjectContext) as! ShoutOut
+                self.shoutOut = (NSEntityDescription.insertNewObject(forEntityName: ShoutOut.entityName, into: self.managedObjectContext) as! ShoutOut)
             }
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)
