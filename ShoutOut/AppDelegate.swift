@@ -17,29 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coreDataStack.createMainContext {[unowned self] container in
             let mainContext = container.viewContext
 
+            let uiCoordinator = UICoordinator(with: mainContext)
+
             let dataService = DataService(managedObjectContext: mainContext)
             dataService.seedEmployees()
-            
-            let storyBoard = self.window?.rootViewController?.storyboard
-            guard let rootVC = storyBoard?.instantiateViewController(withIdentifier: "RootViewController") else {
-                fatalError("Could not instantiate root view controller!")
-            }
 
-            self.window?.rootViewController = rootVC
-
-            let firstViewController = self.getFirstViewController()
-            firstViewController.managedObjectContext = mainContext
-            
-
-            
+            uiCoordinator.presentRxTableViewScreen(on: self.window)
+            //uiCoordinator.presentTableViewScreen(on: self.window)
         }
 		return true
 	}
 
-    func getFirstViewController() -> ShoutOutDraftsViewController {
+    // Move this into routing
+    func getFirstViewController() -> ShoutOutDraftsRxViewController {
         let navController = self.window?.rootViewController as! UINavigationController
         let fistVC = navController.viewControllers[0]
-        return fistVC as! ShoutOutDraftsViewController
+        return fistVC as! ShoutOutDraftsRxViewController
     }
 
 	func applicationWillResignActive(_ application: UIApplication) {

@@ -16,10 +16,14 @@
 		A467F6002153C6A300E3C633 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */; };
 		A467F6032153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */; };
 		A467F6042153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */; };
-		A467F6062153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */; };
-		A467F6072153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */; };
+		A467F6062153D64D00E3C633 /* ShoutOutDraftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutDraftsViewModel.swift */; };
+		A467F6072153D64D00E3C633 /* ShoutOutDraftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6052153D64D00E3C633 /* ShoutOutDraftsViewModel.swift */; };
 		A467F6092153D6D500E3C633 /* ShoutOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */; };
 		A467F60A2153D6D500E3C633 /* ShoutOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */; };
+		A467F60C215529F500E3C633 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F60B215529F500E3C633 /* CoreDataService.swift */; };
+		A467F60D215529F500E3C633 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F60B215529F500E3C633 /* CoreDataService.swift */; };
+		A467F60F21553B1B00E3C633 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F60E21553B1B00E3C633 /* UICoordinator.swift */; };
+		A467F61021553B1B00E3C633 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467F60E21553B1B00E3C633 /* UICoordinator.swift */; };
 		A4F5D7E62148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E42148008F004CE314 /* ShoutOut.xcdatamodeld */; };
 		A4F5D7E72148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E42148008F004CE314 /* ShoutOut.xcdatamodeld */; };
 		A4F5D7E9214800CF004CE314 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5D7E8214800CF004CE314 /* CoreDataStack.swift */; };
@@ -65,8 +69,10 @@
 		A467F5FB2153C69400E3C633 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		A467F5FE2153C6A300E3C633 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
 		A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutDraftsRxViewController.swift; sourceTree = "<group>"; };
-		A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutViewModel.swift; sourceTree = "<group>"; };
+		A467F6052153D64D00E3C633 /* ShoutOutDraftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutDraftsViewModel.swift; sourceTree = "<group>"; };
 		A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOutRouter.swift; sourceTree = "<group>"; };
+		A467F60B215529F500E3C633 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		A467F60E21553B1B00E3C633 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
 		A4F5D7E52148008F004CE314 /* ShoutOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoutOut.xcdatamodel; sourceTree = "<group>"; };
 		A4F5D7E8214800CF004CE314 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A4F5D7EB21495730004CE314 /* ShoutOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutOut.swift; sourceTree = "<group>"; };
@@ -137,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A467F6022153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift */,
-				A467F6052153D64D00E3C633 /* ShoutOutViewModel.swift */,
+				A467F6052153D64D00E3C633 /* ShoutOutDraftsViewModel.swift */,
 				A467F6082153D6D500E3C633 /* ShoutOutRouter.swift */,
 			);
 			name = ShoutOutDrafts;
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A4F5D7F2214A91EE004CE314 /* DataService.swift */,
+				A467F60B215529F500E3C633 /* CoreDataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				F2530B861D985E670029B14E /* View Controllers */,
 				F2530B661D985E400029B14E /* AppDelegate.swift */,
 				A4F5D7E8214800CF004CE314 /* CoreDataStack.swift */,
+				A467F60E21553B1B00E3C633 /* UICoordinator.swift */,
 			);
 			path = ShoutOut;
 			sourceTree = "<group>";
@@ -412,15 +420,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A467F60C215529F500E3C633 /* CoreDataService.swift in Sources */,
 				A4F5D7F3214A91EE004CE314 /* DataService.swift in Sources */,
 				A467F5FF2153C6A300E3C633 /* MVVMViewModel.swift in Sources */,
-				A467F6062153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */,
+				A467F6062153D64D00E3C633 /* ShoutOutDraftsViewModel.swift in Sources */,
 				A4F5D7E62148008F004CE314 /* ShoutOut.xcdatamodeld in Sources */,
 				A4F5D7EF214A5C1E004CE314 /* Employee.swift in Sources */,
 				F2530B8C1D9861E40029B14E /* ShoutOutDetailsViewController.swift in Sources */,
 				F2530B671D985E400029B14E /* AppDelegate.swift in Sources */,
 				A4F5D7EC21495730004CE314 /* ShoutOut.swift in Sources */,
 				A4F5D7FB214A9D42004CE314 /* NamedEntity.swift in Sources */,
+				A467F60F21553B1B00E3C633 /* UICoordinator.swift in Sources */,
 				A4F5D7E9214800CF004CE314 /* CoreDataStack.swift in Sources */,
 				A467F5FC2153C69400E3C633 /* MVVMViewController.swift in Sources */,
 				A467F6092153D6D500E3C633 /* ShoutOutRouter.swift in Sources */,
@@ -445,12 +455,14 @@
 				A467F6002153C6A300E3C633 /* MVVMViewModel.swift in Sources */,
 				A4F5D7FE214AB879004CE314 /* ShoutOutDetailsViewController.swift in Sources */,
 				A4F5D7FF214AB87C004CE314 /* ShoutOutDraftsViewController.swift in Sources */,
-				A467F6072153D64D00E3C633 /* ShoutOutViewModel.swift in Sources */,
+				A467F6072153D64D00E3C633 /* ShoutOutDraftsViewModel.swift in Sources */,
+				A467F61021553B1B00E3C633 /* UICoordinator.swift in Sources */,
 				A467F6042153D3DC00E3C633 /* ShoutOutDraftsRxViewController.swift in Sources */,
 				A467F5FD2153C69400E3C633 /* MVVMViewController.swift in Sources */,
 				F2530B7C1D985E410029B14E /* ShoutOutTests.swift in Sources */,
 				A4F5D7FC214A9D42004CE314 /* NamedEntity.swift in Sources */,
 				A467F5FA2153C68100E3C633 /* MVVMRouter.swift in Sources */,
+				A467F60D215529F500E3C633 /* CoreDataService.swift in Sources */,
 				A4F5D7F6214A9483004CE314 /* SaveDataAndDelete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

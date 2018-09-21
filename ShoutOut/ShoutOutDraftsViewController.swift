@@ -76,8 +76,6 @@ class ShoutOutDraftsViewController: UIViewController,
 		let cell = tableView.dequeueReusableCell(withIdentifier: "subtitleCell", for: indexPath)
 
         let shoutOut = self.fetchedResultsController.object(at: indexPath)
-        
-        print(shoutOut.toEmployee.department)
 
 		cell.textLabel?.text = "\(shoutOut.toEmployee.firstName) \(shoutOut.toEmployee.lastName)"
 		cell.detailTextLabel?.text = shoutOut.shoutCategory
