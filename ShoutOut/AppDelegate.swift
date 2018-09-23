@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let dataService = DataService(managedObjectContext: mainContext)
             dataService.seedEmployees()
 
-            uiCoordinator.presentRxTableViewScreen(on: self.window)
-            //uiCoordinator.presentTableViewScreen(on: self.window)
+            //uiCoordinator.presentRxTableViewScreen(on: self.window)
+            uiCoordinator.presentTableViewScreen(on: self.window)
         }
 		return true
 	}
